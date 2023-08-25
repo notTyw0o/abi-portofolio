@@ -1,0 +1,140 @@
+:root {
+    --primaryColor: #F3FDE8;
+    --secondaryColor: #A8DF8E;
+    --thirdColor: black;
+    --text-color: black;
+    --button-border: #A8DF8E;
+    --button-fill: #e3f0de;
+}
+
+[data-theme="dark"] {
+    --primaryColor: #352F44;
+    --secondaryColor: #5C5470;
+    --thirdColor: black;
+    --text-color: #FAF0E6;
+    --button-border: #352F44;
+    --button-fill: #5C5470;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: var(--primaryColor);
+    z-index: 3;
+}
+
+#web-logo {
+    width: 25px;
+    height: 25px;
+    transform: scale(2);
+    color: var(--text-color);
+}
+
+#navbar > div > div > h5 {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.nav-right {
+    margin-top: 15px;
+}
+
+.nav-right > ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right > ul > li {
+    list-style-type: none;
+}
+
+#switchButton {
+    position: absolute;
+    right: 135px;
+    top: 14px;
+}
+
+#switchButton > svg {
+    color: var(--text-color);
+}
+
+#projects-button {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    transition: 0.8s;
+}
+
+#projects-button:hover {
+    background-color: var(--text-color);
+    border: 1px solid var(--thirdColor);
+    color: var(--thirdColor);
+}
+
+#mainPage {
+    height: 80vh;
+}
+
+#profileDiv {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 3px 3px var(--secondaryColor);
+}
+
+#profilePicture {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+#profilePicture:hover {
+    transform: scale(1.5);
+}
+
+#skillsId {
+    display: flex;
+    gap: 80px;
+}
+
+#skillsId > div > h3 {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#skillsId > div > p {
+    color: rgb(149, 149, 149);
+}
+
+#skillsId > div > h3 > span {
+    font-size: 20px;
+}
+
+#sosmedId {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#sosmedId > a  {
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--button-border);
+    background-color: var(--button-fill);
+    color: var(--text-color);
+    transition: 0.8s;
+}
+
+#sosmedId > a:hover {
+    border: 1px solid var(--text-color);
+    background-color: var(--button-border);
+}
